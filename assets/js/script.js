@@ -4,7 +4,7 @@
 
  //Button to perform a function on click
  document.querySelector('#buttonSuperHero').addEventListener('click', () => { //1.click, 2. arrow function empty
-    getDataBySuperHeroId('100');
+    getDataBySuperHeroId('346');
 })
 
 // urlRodriVariable
