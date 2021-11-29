@@ -3,16 +3,42 @@
 // https://www.superheroapi.com/api.php/4480921542024253/1
 
  //Button to perform a function on click
- document.querySelector('#buttonSuperHero').addEventListener('click', function(event) {
-    event.preventDefault()
-    let inputSuperHeroId = document.getElementById("uniqueID").value;
-    getDataBySuperHeroId(inputSuperHeroId);
-});
+ document.querySelector('#buttonSuperHero').addEventListener('click', () => { //1.click, 2. arrow function empty
+    getDataBySuperHeroId('346');
+})
+
+
+
+/* //Button 2
+$('form').on('submit',(evento) =>{
+evento.preventDefault();
+$("#resultado").html(" ");
+$("#ChartContainer").html(" ");
+hero = parseInt($('#hero').val());
+consulta(hero);
+}) */
+
+//Button 2
+$('form').on('submit',(evento) =>{
+    evento.preventDefault();
+    $("#resultado").html(" ");
+    $("#ChartContainer").html(" ");
+    hero = parseInt($('#superhero-input-1').val());
+    getDataBySuperHeroId(superhero-input-1);
+    // Console Log
+    console.log(evento);
+    console.log("#resultado");
+    console.log("#ChartContainer");
+    console.log(hero);
+    console.log(superhero-input-1);
+
+    })
 
 // urlRodriVariable
 // apiRodriVariable
 // dataRodriVariable
 // resultadoHTMLRodrigoVariable
+
 
 
 function getDataBySuperHeroId(SuperHeroId) {
